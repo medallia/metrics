@@ -9,6 +9,7 @@
     </parent>
 
     <artifactId>metrics-core</artifactId>
+    <version>4.0.0-medallia-SNAPSHOT</version>
     <name>Metrics Core</name>
     <packaging>bundle</packaging>
     <description>
@@ -16,4 +17,16 @@
         production. Metrics provides a powerful toolkit of ways to measure the behavior of critical
         components in your production environment.
     </description>
+    <distributionManagement>
+        <repository>
+            <id>releases</id>
+            <name>Medallia Internal Repository</name>
+            <url>http://maven.medallia.com/nexus/content/repositories/releases</url>
+        </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>Medallia Internal Repository</name>
+            <url>http://maven.medallia.com/nexus/content/repositories/sre-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
 </project>
